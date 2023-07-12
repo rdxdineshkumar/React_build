@@ -1,0 +1,188 @@
+.form2_signup_container{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-color: rgba(0,0,0,0.05);      
+}
+.form2_signup_wrapper{
+    height: 450px;
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: row-reverse;
+    border-radius: 3px;
+    box-shadow: 0px 0px 15px var(--py_bg_color2);
+}
+
+/* Start of Sign up form */
+.form2_signup_form_box{
+    padding: 0px 20px;
+    width: 310px;
+    background-color: var(--py_font_color);
+    border-radius: 3px;
+}
+.form2_signup_form_elements{
+    display: flex;
+    flex-direction: column;
+}
+.form2_signup_form_header{
+    font-size: 32px;
+    padding: 8px 0px;
+    color: var(--py_bg_color1);
+    text-align: center;
+    font-weight: var(--py_font_weight);
+}
+.exist_user{
+    text-align: center;
+    color: var(--py_btn_bg);
+    padding: 0;
+    margin: 0;
+}
+.form2_signup_form_inputs{
+    padding: 8px 0px;
+    border: none;
+    background: none;
+    outline: none;
+    border-bottom: 1px solid var(--py_bg_color1);
+}
+.form2_signup_form_inputs::placeholder{
+    color: var(--placeholder_color);
+    /* padding: 10px 0px; */
+}
+.forms{
+    padding: 8px 0px;
+}
+.form2_signup_form_label{
+    padding: 5px 0px;
+    color:var(--py_bg_color1);
+    font-weight: var(--py_font_weight);
+    font-size: 16px;
+}
+.errors{
+    color: rosybrown;
+    font-size: 14px;
+    /* margin-left: 10px; */
+}
+.form2_signup_form_button{
+    padding: 10px;
+    margin-top: 15px;
+    background:var(--py_bg_color1);
+    color: var(--py_font_color);
+    font-weight: var(--py_font_weight);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.form2_signup_form_button:active{
+    box-shadow: 0px 0px 5px var(--py_bg_color2);
+}
+.error_container{
+    height: 14px;
+}
+/* end of sign in form */
+
+/* Start of signinfunction */
+.form2_signin_box {
+    width: 310px;
+    background: linear-gradient(135deg,var(--py_bg_color1),var(--py_bg_color2));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px;
+    border-radius: 3px;
+}
+.form2_signin_header{
+    font-weight: var(--py_font_weight);
+    font-size: 32px;
+    padding: 20px 0px;
+    color: var(--py_font_color);
+}
+.form2_signin_content {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    text-align: center;
+    font-weight: var(--py_font_weight);
+    color: var(--py_font_color);
+}
+.form2_signin_button{
+    width: 40%;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--py_font_color);
+    color: var(--py_bg_color1);
+    font-weight: var(--py_font_weight);
+    padding: 10px;
+    /* box-shadow: inset 0 0 8px var(--py_bg_color1); */
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+.form2_signin_button:active{
+    box-shadow: 0px 0px 10px var(--py_font_color);
+}
+@media(max-width:850px){
+    .form2_signup_wrapper{
+        height: 380px;
+    }
+    .form2_signup_form_box{
+        padding: 0px 10px;
+        width: 220px;
+    }
+    .form2_signup_form_header,.form2_signup_signup_header{
+        font-size: 24px;
+        padding:8px 0px
+    }
+    .form2_signup_form_label{
+        font-size: 14px;
+        padding: 5px 0px;
+    }
+    .form2_signin_box{
+        width: 200px;
+    }
+    .form2_signin_button{
+        width: 30%;
+        padding: 8px;
+        font-size: 14px;
+    }
+    .form2_signup_form_button{
+        margin:8px 0px;
+        padding: 8px;
+    }
+    .errors,.exist_user{
+        margin: 0;
+        padding: 0;
+        font-size:12px;
+    }
+    .error_container{
+        height: 12px;
+        padding: 0;
+        margin: 0;
+    }
+    .forms{
+        padding: 5px 0px;
+    }
+
+  }
+  @media(max-width:500px){
+   .form2_signup_wrapper{
+      margin: 5px 5px;
+   } 
+   .form2_signup_form_box{
+       min-width: 250px;
+   }
+   .form2_signin_box{
+       display: none;
+   }
+   .form2_signup_wrapper::-webkit-scrollbar{
+      width: 0px;
+      height: 0px;
+  }
+   /* .form2_signin_box{
+       min-height: 220px;
+   } */
+   .form2_signup_container{
+       min-width: 300px;
+   }
+  }

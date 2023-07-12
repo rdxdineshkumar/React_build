@@ -1,0 +1,60 @@
+.slider{
+    overflow:hidden;
+    margin: 0px 100px;
+    border-radius: 5px;
+}
+.slider .slider_images{
+    position: relative; 
+    width: 500%;
+    height:47vh;
+    margin-top: 5px;
+    left: 0;
+    animation: 20s slider infinite alternate ;
+} 
+.slider .slider_images img{
+    width: 20%;
+    float: left;
+    height: 47vh;
+    object-position: center;
+    object-fit: fill;
+} 
+@keyframes slider{
+    0%{
+        left:0;
+    }
+    25%{
+        left: -100%;
+    }
+    50%{
+        left: -200%;
+    }
+    75%{
+        left:-300%;
+    }
+    100%{
+        left:-400%;
+    }
+   
+
+}
+@media(max-width:850px){
+    .slider{
+        margin: 0px 10px;
+        
+    }
+   
+}
+@media (max-width:500px){
+    .slider{
+        margin: 0px 10px;
+        min-width: 280px;  
+        background-color: var(--py_bg_color2);
+        border-radius: 0px;
+    }
+    .slider .slider_images{
+        height: 30vh;
+    }
+    .slider .slider_images img{
+        height: 30vh;
+    }
+}

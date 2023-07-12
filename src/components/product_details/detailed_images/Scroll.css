@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.vertical-scroll{
+    width: 100px;
+    height: 460px;  
+    border: 1px solid rgba(0,0,0,.1);
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.vertical-scroll a{
+    border: 1px solid rgba(0,0,0,.1);
+}
+.vertical-scroll a img{
+ width: 80px;
+ height: 70px;
+ object-fit: contain;
+ object-position: center;
+ 
+}
+.img_active{
+    box-shadow: 0px 0px 3px var(--py_bg_color1);
+}
+@media (max-width:350px){
+    .vertical-scroll{
+        width: 50px;
+        height: 250px;
+    }
+    .vertical-scroll a img{
+        width: 40px;
+        height: 35px;
+    }
+}

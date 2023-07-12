@@ -1,0 +1,169 @@
+.myprofileContainer{
+    margin: 10px 100px;
+    padding: 0;
+    /* height: 80vh; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+.myprofile{
+    height: 420px;
+    display: flex;
+    width: 100%;
+    box-shadow: 0px 0px 5px var(--py_btn_bg);
+    /* box-shadow: 0px 0px 5px var(--py_bg_color2); */
+    border-radius: 2px;      
+} 
+.myprofile_left{
+    height: 420px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    /* background-color: rgba(188, 143, 143,0.5); */
+    background: linear-gradient(var(--py_bg_color1),var(--py_bg_color2));
+}
+.myprofile_photo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.img_container{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border-bottom: 1px solid var(--py_btn_bg) ; */
+}
+.myprofile_img{
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+.username{
+    font-weight: bold;
+    font-size: 24px;
+    color: var(--py_btn_bg);
+}
+.myprofile_edit{
+    /* border-bottom: 1px solid var(--py_btn_bg); */
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0px;
+    justify-content: center;
+    align-items: center;
+}
+.myprofile_link{
+    /* text-decoration: none; */
+    /* border-bottom: 1px solid var(--py_btn_bg); */
+    padding: 20px 0px;
+    color: var(--py_btn_bg);
+    text-align: center;
+}
+
+/*  RHS */
+.myprofile_info{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    background-color: rgba(0, 0,0, 0.01);
+    /* background-color: var(--py_bg_color2); */
+}
+.myinformation,.myOrders{
+    margin: 5px 10px;
+    background-color: var(--py_font_color);
+    box-shadow: 0px 0px 5px var(--py_bg_color2);
+    /* box-shadow: 0px 0px 5px var(--py_btn_bg); */
+    border-radius: 3px;
+}
+.myinformation_header,.myOrders_header{
+    padding-bottom: 8px;
+    margin: 0px 5px;
+    text-transform: capitalize;
+    font-weight: bold;
+    /* border-bottom: 1px solid rgba(0, 0,0, 0.1); */
+    color: var(--py_btn_bg);
+}
+.email_info p,.username_info p{
+    padding: 0;
+    margin: 0;
+    margin: 5px 0px;
+}
+.email_header,.username_header{
+    font-weight: bold;
+    color: var(--py_btn_bg);
+}
+.email_details,.username_details{
+    color: rgba(0, 0,0, 0.5);
+}
+.myinformation_container{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px;
+}
+.myOrders_link{
+    float: right;
+    text-transform: capitalize;
+    margin: 10px 0px;
+    font-size: 14px;
+    text-decoration: none;
+    margin-right: 10px;
+    color: var(--py_bg_color1);
+}
+.logout{
+    /* border: 1px solid burlywood; */
+    /* height: 80%; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 10px 10px;
+    /* background-color: var(--py_font_color); */
+}
+.logout_link{
+    text-decoration: none;
+    color: var(--py_bg_color1);
+}
+.myOrders_link:hover,.logout_link:hover{
+    color: var(--py_btn_bg);
+
+}
+@media (max-width:700px){
+    .myprofileContainer{
+        margin: 10px 10px ;
+        min-width: 290px;
+    }
+}
+@media(max-width:500px){
+.myprofileContainer{
+    margin: 5px 5px;
+}
+.myinformation,.myOrders{
+    margin: 5px 5px;
+}
+.myinformation_container{
+    flex-direction: column-reverse;
+}
+ .myprofile,.myprofile_left{
+    height: 420px;
+ } 
+ .myprofile_img{
+     width:70px;
+     height:70px;
+ }
+ .username{
+     font-size: 16px;
+ }
+ .myinformation_header,.myOrders_header{
+     font-size: 14px;
+ }
+ .email_header,.username_header,.myprofile_link{
+     font-size: 12px;
+ }
+ .email_details,.username_details,.myOrders_link,.logout_link{
+     font-size: 12px;
+ }
+}

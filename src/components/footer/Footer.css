@@ -1,0 +1,32 @@
+.footer{
+    margin:0px;
+    padding: 0;
+    background-color: var(--py_bg_color2);
+    min-width: 300px;
+}
+.footer_container{
+    background-color: rgba(0,0,0,0.4);
+    padding: 20px 0px;
+}
+.footer_icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    border-bottom: 1px solid grey;
+}
+.footer_icons i,.footer_terms{
+    margin: 20px;
+    color: var(--py_font_color);
+    
+}
+.footer_terms p{
+    text-align: center;
+    text-transform: capitalize;
+}
+@media(max-width:500px){
+.footer_terms p{
+    font-size:14px;
+}
+
+}

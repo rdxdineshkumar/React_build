@@ -1,0 +1,98 @@
+.category{    
+    padding: 0px 100px;
+    background-color: var(--py_bg_color2);
+}
+.category h3{
+    text-transform: capitalize;
+    padding: 10px;
+    margin: 0px;
+    color: var(--py_btn_bg);
+}
+.category__items{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 240px;
+    column-gap: 20px;
+    width: 98%;
+    overflow-x: auto;
+    padding: 0px 10px;
+    
+}
+.category_items.individual{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 20px;
+}
+::-webkit-scrollbar{
+    height: 5px;
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+    box-shadow: inset 0px 0px 10px white;
+    
+
+}
+::-webkit-scrollbar-thumb{
+    background: var(--py_btn_bg);
+    border-radius: 3px;
+}
+.category__items__item{
+    margin: 10px 0px;
+    box-shadow: 0px 0px 5px grey;
+    padding: 10px;
+    border-radius: 5px;
+    min-width: 120px;
+    background-color: white;
+    text-decoration: none;
+    /* height: 280px; */
+}
+.category__items__item img{
+    width: 100%;
+    height: 140px;
+    object-fit: contain;
+}
+.category__items__item h4, .category__items__item p{
+    color: var(--py_btn_bg);
+    font-weight: bold;
+}
+@media(max-width:850px){
+    .category{
+        padding: 0px 10px;
+    }
+}
+@media(max-width:650px){
+    .category_items.individual{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .category__items__item h4,.category__items__item p{
+        font-size: 14px;
+    }
+}
+@media(max-width:500px){
+    .category{
+        min-width: 300px;
+        box-sizing: border-box;
+    }
+    .category__items__item{
+        padding:0;
+    }
+    .category_items.individual{
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 10px;
+        box-sizing: border-box;
+    }
+    .category__items__item h4,.category__items__item p,.category__title{
+        margin: 0;
+        font-size: 12px;
+        padding: 5px;
+        
+    }
+    .category__items{
+        grid-auto-columns: 120px;
+    }
+}
+@media (max-width:350px){
+    .category{
+        min-width: 300px;
+    }
+}

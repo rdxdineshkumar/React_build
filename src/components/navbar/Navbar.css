@@ -1,0 +1,58 @@
+.navbar{
+    margin: 0;
+    padding: 0;
+    background: var(--py_bg_color2);
+}
+.navbar_container{
+    border-bottom: 1px solid var(--py_btn_bg);
+}
+.navbar_elements{
+    margin: 0px 100px;
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 20px;
+}
+.navbar_elements .btn{
+    color: var(--py_font_color);
+    text-decoration: none;   
+}
+.navbar_elements .active{
+    border-bottom: 2px solid var(--py_btn_bg);
+    color: var(--py_btn_bg);
+}
+@media(max-width:920px){
+  
+    .navbar_elements {
+      overflow: auto;
+  }
+    .navbar_elements::-webkit-scrollbar{
+        width: 0px;
+        height: 0px;
+    } 
+}
+@media(max-width:850px){
+    .navbar{
+        min-width: 300px;
+    }
+    .navbar_elements{
+        margin: 0px 10px;
+      overflow: auto; 
+      column-gap: 10px;
+      /* white-space: nowrap;  */ 
+    }
+    .navbar_elements::-webkit-scrollbar{
+        width: 0px;
+        height: 0px;
+    }
+   
+}
+@media(max-width:500px){
+    .navbar{
+        min-width: 300px;
+    }
+    .navbar_elements .btn{
+        font-size: 14px;
+    }
+}
