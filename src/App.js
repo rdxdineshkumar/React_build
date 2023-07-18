@@ -72,7 +72,10 @@ function App() {
         </Route>
         <Route path="/watch">
           <Categories categoryName="watch"/>
-        </Route> 
+        </Route>
+        {/* <Route path="/watch">
+          <Categories categoryName="watch"/>
+        </Route> */}
         <Footer/>  
       </Router>
     </div>
