@@ -5,14 +5,14 @@
 }
 .slider .slider_images{
     position: relative; 
-    width: 500%;
+    width: 600%;
     height:47vh;
     margin-top: 5px;
     left: 0;
-    animation: 20s slider infinite alternate ;
+    animation: 20s slider infinite ease-in-out;
 } 
 .slider .slider_images img{
-    width: 20%;
+    width: 16.66%;
     float: left;
     height: 47vh;
     object-position: center;
@@ -20,22 +20,17 @@
 } 
 @keyframes slider{
     0%{
-        left:0;
+        transform: translateX(0);
     }
-    25%{
-        left: -100%;
+    33%{
+        transform: translateX(-1217px);
     }
-    50%{
-        left: -200%;
-    }
-    75%{
-        left:-300%;
+    66%{
+        transform: translateX(-2434px);
     }
     100%{
-        left:-400%;
+        transform: translateX(-3651px);
     }
-   
-
 }
 @media(max-width:850px){
     .slider{
