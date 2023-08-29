@@ -10,7 +10,13 @@
     margin-top: 5px;
     left: 0;
     animation: 20s slider infinite ease-in-out;
-} 
+    /* background: none; */
+}
+.loading_images{
+    background: url(../../../../public/img/blur-image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .slider .slider_images img{
     width: 16.66%;
     float: left;
@@ -20,16 +26,16 @@
 } 
 @keyframes slider{
     0%{
-        transform: translateX(0);
+        left: 0;
     }
     33%{
-        transform: translateX(-1217px);
+        left: -100%;
     }
     66%{
-        transform: translateX(-2434px);
+        left: -200%;
     }
     100%{
-        transform: translateX(-3651px);
+        left: -300%;
     }
 }
 @media(max-width:850px){
